@@ -1,0 +1,48 @@
+body {
+	background-color:#eee;
+	min-height:100%;
+	font-family:Voltaire;
+}
+
+.tiles {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.tiles > * {
+	margin:10px;
+	border: 1px solid #ddd;
+	background-color:#fff;
+	cursor:pointer;
+	transition:all 200ms linear;
+	display:flex;
+	align-items:center;
+}
+
+.tiles > *:hover {
+	background-color:#729D34;
+	color:white;
+	transform:scale(1.1);
+}
+
+.tiles > * {
+	flex: 300px;
+}
+
+.stars-bg {
+	position: relative;
+	display:inline-block;
+	color:#ccc;
+	font-size:1.3em;
+}
+.stars-fg {
+	position: absolute;
+	color:#729D34;
+	left:0;
+	overflow:hidden;
+	transition:color 200ms linear;
+}
+
+.tiles > *:hover .stars-fg {
+	color:gold;
+}
